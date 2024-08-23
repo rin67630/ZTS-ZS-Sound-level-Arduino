@@ -29,9 +29,6 @@ void setup() {
   SwSerial.begin(9600);
   pinMode(7, INPUT);
   pinMode(8, OUTPUT);
-#if defined(TERM_IS_SOFTSER)
-  Serial.swap();
-#endif
 }
 
 void loop() {
